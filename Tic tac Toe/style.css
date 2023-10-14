@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+h1{
+    width: 800px;
+    border-bottom:2px solid black ;
+    text-align: center;
+    font-size: 64px;
+}
+.tablero{
+    width: 600px;
+    height: 600px;
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    text-align: center;
+    
+}
+.lineVertical{
+    
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.lineHorizontal{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.tablero div{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 128PX;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+button{
+    border-radius: 5px;
+    
+    font-size: 20PX;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}

@@ -1,0 +1,264 @@
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+   
+   :root{
+        
+        /* primary */
+        --Desaturated-Red: hsl(0, 36%, 70%);
+        --Soft-Red: hsl(0, 93%, 68%);
+
+        /* ### Neutral */
+        --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+        /* ### Gradients */
+
+        /* --Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+        --Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+        font-size: 16px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .texto{
+        word-wrap: break-word;
+    }
+
+    @media (max-width: 376px) {
+
+        #container{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            background:linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+            padding-bottom: 50px;
+            min-width: 200px;
+            min-height: 800px ;
+            
+        }
+
+        #header{
+            
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+        #fotoprincipal{
+            width: 100%;
+            height: 250px;
+            
+            background-image: url(images/hero-mobile.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #logo{
+            margin-left: 20px;
+            width: 130px;
+        }
+        #contenido{
+            display: flex;
+            flex-direction: column;   
+            align-items: center;
+
+        }
+        
+        .texto{
+            padding-top: 60px;
+            padding-bottom: 20px;
+            font-weight: 400;
+            font-size: 40px; 
+            letter-spacing: 7px;
+            font-weight: 600;
+            color: var(--Dark-Grayish-Red);
+
+        }
+        .texto span{
+            font-weight: 300;
+            color: var(--Desaturated-Red);
+        }
+
+        #contenido>p{
+            width: 80%;  
+            line-height: 25px;
+            color: var(--Desaturated-Red);
+            padding-bottom: 25px;
+        }
+
+        
+        #formulario{
+            width: 85%;
+            height: 45px;
+            border: 1px solid rgba(189, 158, 158, 0.5);
+            background-clip: padding-box; 
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+        }
+
+        #input{
+            border: 0;
+            padding-left: 30px;
+            border-radius: 30px;
+            background-color: transparent;
+            color: var(--Desaturated-Red);
+            outline: none;
+            min-width: 50px;
+        }
+        #input::placeholder{
+            color: var(--Desaturated-Red);
+            opacity: 50%;
+        }
+        #submit{
+            width: 60px;
+            height: 100%;
+            min-width: 15px;
+            border-radius: 30px;
+            border: 0;
+            box-shadow: 0px 10px 10px rgba(241, 183, 183, 0.5);
+            background: url(images/icon-arrow.svg),linear-gradient(135deg,  hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+            background-repeat: no-repeat; 
+            background-position: center;  
+        }  
+        #error{
+            width: 80%;
+            margin: auto;
+            margin-top: 10px;
+            text-align: start;
+            color: var(--Soft-Red);
+            font-size: 13px;
+            padding-left:30px;
+            display: none;
+            
+        }
+        #logoerror{
+            display: none;
+        }
+    }
+    @media (min-width: 376px) {
+        #container{
+            width: 100%;
+            height: 100vh;
+            background:url(images/bg-pattern-desktop.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: grid;
+            grid-template-columns: 60% 40%;
+             grid-template-rows: 20% 80%;
+        }
+        #header{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        #fotoprincipal{
+            width: 100%;
+            height: 100%;
+            background-image: url(images/hero-desktop.jpg);
+            grid-area: "b";
+            grid-area: span 3;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:center;
+           
+        }
+
+        #contenido{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;   
+            
+
+        }
+        .texto{
+            max-width: 500px;
+            min-width: 200px;
+            width: 100%;
+            padding-bottom: 20px;
+            font-size: 55px;
+            letter-spacing: 15px;
+            font-weight: 600;
+            color: var(--Dark-Grayish-Red);
+            
+
+        }
+        .texto span{
+            font-weight: 300;
+            color: var(--Desaturated-Red);
+        }
+       
+        #contenido>p{
+            width: 65%;  
+            line-height: 25px;
+            color: var(--Desaturated-Red);
+            padding-bottom: 25px;
+        }
+        #formulario{
+            width: 75%;
+            height: 45px;
+            border: 1px solid rgba(189, 158, 158, 0.5);
+            background-clip: padding-box; 
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 200px;
+
+        }
+
+        #input{
+            border: 0;
+            padding-left: 30px;
+            border-radius: 30px;
+            background-color: transparent;
+            color: var(--Desaturated-Red);
+            outline: none;
+            width: 70%;
+        }
+
+        #input::placeholder{
+            color: var(--Desaturated-Red);
+            opacity: 50%;
+        }
+        #submit{
+            width: 80px;
+            height: 100%;
+            min-width: 15px;
+            border-radius: 30px;
+            border: 0;
+            box-shadow: 0px 10px 10px rgba(241, 183, 183, 0.5);
+            background: url(images/icon-arrow.svg),linear-gradient(135deg,  hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+            background-repeat: no-repeat; 
+            background-position: center;  
+        } 
+        #submit:hover{
+            transform: scale(1.3);
+            background: url(images/icon-arrow.svg),hsl(0, 80%, 86%); 
+            background-repeat: no-repeat; 
+            background-position: center;  
+        }
+        
+         #error{
+            display: none;
+            width: 80%;
+            margin-top: 10px;
+            text-align: start;
+            color: var(--Soft-Red);
+            font-size: 13px;
+            padding-left: 30px;
+        }
+        #logoerror{
+            display: none;
+            
+        }  
+    }
+    
+
+

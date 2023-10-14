@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    overflow: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 23% auto 23%;
+    column-gap: 10px;
+}
+.izquierda{
+    padding-top:30px ;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-size: contain;
+    font-size: larger;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    min-width:150px ;
+    max-width: 100%;align-items: center;
+}
+#nombre{
+    width:100%;  
+    margin: 20px auto;
+    background-color: rgb(0, 0, 0);
+    opacity: 30%;
+    border-radius: 20px;
+}
+.contadores{
+    width:100%;   
+    margin: 20px auto;
+    background-color: rgb(0, 0, 0);
+    opacity: 30%;
+}
+
+#cookie{
+    width: 70%;
+    max-width: 300px;
+    min-width: 150px;
+    transform: scale(1);
+}
+
+
+.derecha{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 100%;
+    background-image: url();
+    
+}
+#edificios{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    background-size: contain;
+}
+.multiplicador{
+    height: 80px;
+    text-align: start;
+}
+
+

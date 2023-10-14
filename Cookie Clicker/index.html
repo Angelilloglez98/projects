@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cookie Clicker</title>
+</head>
+<body onload="cargar()">
+    <div id="container">
+
+        <div class="izquierda">
+            <div id="nombre">La confiteria de la abuela paca</div>
+            <div class="contadores">
+                <div id="galletastotales">galletas</div>
+                <div id="galletasporsegundo">por segundo:</div>       
+            </div>
+            <img src="cookie.png" alt="cookie" id="cookie">
+        </div>
+
+        <div class="centro">
+            <div class="opciones">
+
+            </div>
+            <div class="inventario">
+                INVENTARIO
+            </div>
+        </div>
+        
+        <div class="derecha">
+
+            <div id="tienda">
+
+                TIENDA
+                <div class="interruptores">
+                    Interruptores
+                </div>
+                <div class="mejoras">
+                    mejoras
+                </div>
+                <div id="edificios">edificios                 
+                    <button id="cursor" class="multiplicador" onclick="edificio(this)">Cursor 0 : 15</button>
+                    <button id="abuela"class="multiplicador" onclick="edificio(this)">Abuela 0 : 100</button>
+                    <button id="granja"class="multiplicador" onclick="edificio(this)">Granja 0 : 1.100</button>
+                    <button id="mina"class="multiplicador" onclick="edificio(this)">Mina 0 : 12.000</button>
+                    <button id="fabrica"class="multiplicador"onclick="edificio(this)">Fabrica 0 : 130.000</button>
+                    <button id="banca"class="multiplicador"onclick="edificio(this)">Banca 0 : 1.400.000</button>
+                    <button id="templo"class="multiplicador"onclick="edificio(this)">Templo 0 : 20.000.000</button>
+                    <button id="torremagica"class="multiplicador"onclick="edificio(this)">Torre Magica 0 : 330.000.000</button>
+                    <button id="envio"class="multiplicador"onclick="edificio(this)">Envio 0 : </button>
+                    <button id="laboratorio"class="multiplicador"onclick="edificio(this)">Laboratorio de alquimia 0 : </button>
+                    <button id="portal"class="multiplicador"onclick="edificio(this)">Portal 0 : </button>
+                    <button id="maquinadeltiempo"class="multiplicador"onclick="edificio(this)">Maquina del tiempo 0 : </button>
+                    <button id="antimateria"class="multiplicador"onclick="edificio(this)">Condensador de antimateria 0 : </button>
+                    <button id="prisma"class="multiplicador"onclick="edificio(this)"> Prisma 0 : </button>
+                    <button id="probabilizador"class="multiplicador"onclick="edificio(this)">Probabilizador 0 : </button>
+                    <button id="motorfractal"class="multiplicador"onclick="edificio(this)">Motor Fractal 0 : </button>
+                    <button id="javascript"class="multiplicador"onclick="edificio(this)">Consola Javascript 0 : </button>
+                    <button id="universoparalelo"class="multiplicador"onclick="edificio(this)">Universo Paralelo 0 : </button>
+                    <button id="panaderocerebral"class="multiplicador"onclick="edificio(this)">Panadero cerebral 0 : </button>
+                </div>
+            </div>
+
+        </div>
+        <button onclick="reset()">RESET</button>
+    </div>
+</body>
+</html>

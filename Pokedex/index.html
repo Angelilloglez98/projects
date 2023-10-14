@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    </style>
+    
+    <title>Pokedex</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="moves.js" defer></script>
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="titulo">POKEDEX</h1>
+
+        <div class="consola">
+
+            <div class="pantalla">
+                <div class="screen" id="screen"></div>
+                <div class="botonespagina">
+                    <button id="botonatras" class="boton">atras</button>
+                    <button id="botonsiguiente" class="boton">siguiente</button>
+                </div>
+                
+            </div>
+
+            <div class="parteinferior">
+                <input type="text" id="buscador" placeholder="Introduce un ID o Nombre" class="buscador">
+            </div>
+
+            <div class="informaciondetallada" id="infodetallada">
+
+                <div class="imagen_info" id="imagen_info">
+                    <div class="circ" id="circ1"></div>
+                    <div class="circ"></div>
+                </div>
+                <div class="basics_info">
+                    <p class="basic_info" id="nombre_info">NOMBRE</p>
+                    <p class="basic_info" id="numero_info">NUMERO</p>
+                </div>
+                <div class="stats">
+                    <p id="vida" class="stat">hp</p>
+                    <p id="ataque" class="stat">ataque</p>
+                    <p id="defensa" class="stat">defensa</p>
+                    <p id="ataque_esp" class="stat">Ataque especial</p>
+                    <p id="defensa_esp" class="stat">Defensa especial</p>
+                    <p id="velocidad" class="stat">velocidad</p>
+                </div>
+                <div class="tipos" id="tipos"></div>
+                
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Developed by <a href="#">Angelillo's.Devs()</a></p>
+            <p>API: <a href="https://pokeapi.co/">Pokeapi</a></p>
+        </footer>
+        
+    </div>
+    
+</body>
+
+</html>
